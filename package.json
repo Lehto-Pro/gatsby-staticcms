@@ -10,12 +10,16 @@
   "dependencies": {
     "@fontsource-variable/montserrat": "^5.0.17",
     "@fontsource/merriweather": "^5.0.8",
+    "@reach/dialog": "^0.18.0",
+    "@reach/tabs": "^0.18.0",
+    "@reach/visually-hidden": "^0.18.0",
     "@staticcms/app": "^4.0.1",
     "@staticcms/core": "^4.0.1",
     "gatsby": "^5.13.1",
     "gatsby-plugin-feed": "^5.13.0",
     "gatsby-plugin-image": "^3.13.0",
     "gatsby-plugin-manifest": "^5.13.0",
+    "gatsby-plugin-netlify-identity": "^0.0.3",
     "gatsby-plugin-sharp": "^5.13.0",
     "gatsby-plugin-static-cms": "^4.0.0",
     "gatsby-remark-images": "^7.13.0",
@@ -26,7 +30,8 @@
     "gatsby-transformer-sharp": "^5.13.0",
     "prismjs": "^1.29.0",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "react-netlify-identity-widget": "^0.2.7"
   },
   "devDependencies": {
     "prettier": "^2.8.8"

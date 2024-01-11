@@ -9,19 +9,18 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Gatsby Starter Blog with StaticCMS`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Lauri Lehto`,
+      summary: `who lives and works in Finland and codes for fun.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `lehtopro`,
     },
   },
   plugins: [
-    `gatsby-plugin-static-cms`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -122,5 +121,17 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-static-cms`,
+      options: {
+        enableIdentityWidget: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-netlify-identity`,
+      options: {
+        url: `https://lehtopro-gatsby-staticcms.netlify.app/admin` // required!
+      }
+    }
   ],
 }
